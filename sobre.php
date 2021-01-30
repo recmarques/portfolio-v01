@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+  <head>
+
+      <meta charset="utf-8">
+      <title>Sobre mim | Portfólio Renata Marques</title>
+      <link rel="icon" href="img/favicon.png" type="image/png" />
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Renata de Castro M. - EQUIPE SOL">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/style-sobre.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+   
+    
+    <style>
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } 
+
+    hr.sobre {
+        border-top: 2px solid #000000;
+    }
+
+    hr.about {
+        border-top: 2px solid #ffffff;
+    }
+
+    body{
+      background: #272727 !important;
+    }
+        
+    nav{
+          display: flex;
+          height: 80px;
+          width: 100%;
+          background: #2D2D2D;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 50px 0 20px;
+          font-weight: 700;
+          font-family: 'Roboto Condensed', sans-serif;
+          flex-wrap: wrap;
+      }
+
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 0px;
+      margin-top: 25px;
+      font-weight: 700;
+    }
+
+    nav .logo{
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          text-decoration: none;
+      }
+      
+      nav .logo a{
+        color: white;
+      }
+
+      nav .logo a:hover{
+          color: #ddd;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+      }
+
+    nav .logo img{
+      width: 40%;
+      padding-top: 10px;
+    }
+
+    nav ul{
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 1;
+      list-style: none;
+    }
+    
+    nav ul li{
+      margin: 0 5px;
+    }
+        
+    nav ul li a{
+          color: #F5D83D;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 8px 15px;
+          border-radius: 5px;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+          padding-right: 35px;
+          padding-left: 35px;
+          font-size: 14px;
+          font-weight: 700;
+          align-content: center;
+          text-align: center;
+      }
+
+    nav ul li a.active,
+    nav ul li a:hover{
+      color: #fff;
+      background: transparent;
+      text-decoration: none;
+    }
+        
+    nav .menu-btn i{
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+    }
+
+    input[type="checkbox"]{
+      display: none;
+    }
+
+    @media (max-width: 1000px){
+      nav{
+        padding: 0 40px 0 50px;
+      }
+    }
+        
+    @media (max-width: 920px) {
+      nav .menu-btn i{
+        display: block;
+        /* margin-top: 21px; */
+      }
+      .menu-distant{
+            padding-right: 0 !important;
+            padding: 0;
+        }
+
+      #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+      
+      nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #2d2d2d;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+      }
+
+      #click:checked ~ ul{
+        left: 0;
+      }
+
+      nav ul li{
+        width: 100%;
+        margin: 5px 0;
+      }
+
+      nav ul li a{
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      #click:checked ~ ul li a{
+        margin-left: 0px;
+      }
+
+      nav ul li a.active,
+      nav ul li a:hover{
+        background: none;
+        color: #fff;
+      }
+    }
+
+    .no-show-desktop{
+      display: table;
+    }
+
+    .no-show-mobile{
+      display: none;
+    }
+
+    ::-webkit-scrollbar{
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track{
+      border: 7px solid rgb(19, 19, 19);
+      box-shadow: inset 0 0 2.5px 2px rgb(0,0,0,0.5);
+    }
+
+    ::-webkit-scrollbar-thumb{
+      background: linear-gradient(
+      45deg,
+      #98cec3,
+      #98cec3
+      );
+      border-radius: 3px;
+    }
+
+    body{
+      background-color: #24AE91;
+    }
+
+    .nav-wrapper{
+      background-color: #23a78a;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .nav-wrapper .brand-logo{
+      padding-left: 80px;
+    }
+
+    .nav-wrapper .brand-logo img{
+      width: 30%;
+    }
+
+    @media screen and (max-width: 700px){    
+        .nav-wrapper .brand-logo img{
+          width: 40%;
+        }
+
+        nav .logo img{
+          width: 30%;
+          padding-top: 0px;
+        }
+    }
+
+    #nav-mobile{
+      padding-right: 10px;
+    }
+
+    #nav-mobile a{
+      padding-right: 35px;
+      padding-left: 35px;
+      font-size: 14px;
+      font-weight: 700;
+      align-content: center;
+      text-align: center;
+    }
+
+    #nav-mobile a:hover{
+      text-decoration: none;
+      color: white;
+    }
+
+    .not-activate{
+      color: black;
+    }
+
+    .activate{
+      color: white;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }  
+
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .bem-vindo{
+      text-align: right;
+      padding-top: 8%;
+      color: white;
+      padding-right: 11%;
+      line-height: 60px;
+      font-size:35px;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .banner{
+      text-align: right;
+      padding-top: 8%;
+      color: white;
+      line-height: 60px;
+      font-size:35px;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .button {
+      border: 2px solid #000;
+      color: #ddd;
+      padding: 1px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .button1 {
+      background-color: transparent; 
+      font-weight: 800;
+      color: #fff; 
+      border: 2px solid #fff;
+      padding: 26px 71px;
+      font-family: 'Josefin Sans', sans-serif;
+      transition: 0.3s;
+    }
+
+    .button1:hover {
+      background-color: #1d1d1d; 
+      font-weight: 600;
+      color: #fff; 
+      border: 2px solid #fff;
+      font-family: 'Josefin Sans', sans-serif;
+      transition: 0.5s;
+    }
+
+    .button-vermais {
+      border: none;
+      padding: 30px 80px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    @media screen and (min-width: 1400px){
+
+      
+      .titulo-banner{
+        text-align: left;
+        padding-top: 2% !important;
+        color: #fff;
+        padding-left: 11% !important;
+        line-height: 70px;
+        font-size:71px;
+        max-width: 877px !important;
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .descrição{
+        padding: 90px 170px;
+        line-height: 42px;
+        /* background-color: #393939; */
+        font-weight: 700 !important;
+        font-size:19px;
+        font-family: 'Lato', sans-serif !important;
+        /* color: #fff; */
+      }
+
+      .footer{
+        background-color: #1D1D1D;
+        width: 100%;
+        height: 230px !important;
+      }
+
+      .bem-vindo{
+        text-align: right;
+        padding-top: 8%;
+        color: white;
+        padding-right: 11%;
+        line-height: 60px;
+        font-size:40px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+      }
+    }
+
+    .banner{
+      color: black;
+      text-align: left;
+      padding-left: 80px;
+      font-size: 50px;
+      height: 450px;
+      padding-top: 80px;
+      width: 50%;
+      font-family: 'Josefin Sans', sans-serif;
+      margin: 0;
+    }
+
+    .banner .titulo{
+      color: black;
+      text-align: left;
+      font-weight: 700;
+      max-width: 510px;
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+
+    .row{
+      width: 100%;
+    }
+
+    @media screen and (max-width: 700px){
+      .hero-image{
+        height: 640px;
+      }
+
+      .banner{
+        width: 100%;
+        height: 430px;
+        padding-left: 43px;
+        /* display: table-row-group; */
+        padding-top: 60px;
+      }
+
+      .go-up-buttons {
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        padding-left: 47px;
+        padding-top: 16px !important;
+        /* margin-left: 130px; */
+        margin-left: 0 !important;
+        align-content: center;
+        align-content: center;
+      }
+
+
+      .banner .titulo{
+        font-size: 35px;
+        line-height: 45px;
+      }
+
+      .go-up{
+        padding-right: 10px !important;
+        background-color: #272727 !important;
+        padding-bottom: 10px !important;
+        margin: 0 !important;
+        text-align: right !important;
+    }
+
+      .row-2{
+        display: block;
+      }
+
+      .footer .rede-social{
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .rede-social img{
+        width: 10%;
+      }
+
+      .footer .logo-footer{
+        padding: 10px;
+        text-align: center;
+        padding-top: 40px;
+      }
+
+      .footer .logo-footer img{
+        width: 30% !important;
+      }
+
+      .no-show-mobile{
+        display: none;
+      }
+
+      .hero-image .row{
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0;
+      }
+
+    }  
+
+    .footer{
+      background-color: #1D1D1D;
+      width: 100%;
+      height: 180px;
+    }
+
+    .footer .rede-social{
+      background-color: #1D1D1D;
+      align-content: center;
+      align-items: center;
+      -moz-box-align: center;
+      padding-left: 120px;
+      padding-top:55px;
+    }
+
+    .footer .logo-footer{
+      background-color: #1D1D1D;
+      align-content: center;
+      align-items: center;
+      -moz-box-align: center;
+      padding-left: 120px;
+      padding-top:45px;
+    }
+
+    .footer .logo-footer img{
+      width: 55%;
+    }
+
+    .go-up-buttons{
+      position: absolute;
+      text-align: center;
+      align-items: center;
+      margin-left: 130px;
+      align-content: center;
+      align-content: center;
+    }
+
+    @media screen and (min-width: 1400px){
+      .titulo-banner {
+        max-width: 1300px !important;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+
+      .hero-image {
+        background-color: #2d2d2d;
+        height: 215px !important;
+      }
+
+      .descrição {
+        height: 345px;
+        padding: 31px 170px;
+      }
+  }
+
+    .go-up-img{
+      text-align: right;
+    }
+
+  @media screen and (min-width: 1400px){
+      .img-banner img{
+        width: 90%;
+        padding-top: 0;
+        padding-left: 150px;
+      }
+
+      .bem-vindo{
+        text-align: right;
+        padding-top: 8%;
+        color: white;
+        padding-right: 11%;
+        line-height: 60px;
+        font-size:40px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .footer{
+        background-color: #1D1D1D;
+        width: 100%;
+        height: 220px !important;
+      }
+
+      .footer .rede-social{
+        background-color: #1D1D1D;
+        align-content: center;
+        align-items: center;
+        -moz-box-align: center;
+        padding-left: 110px;
+        padding-top: 25px;
+      }
+
+      .footer .logo-footer{
+        background-color: #1D1D1D;
+        align-content: center;
+        align-items: center;
+        -moz-box-align: center;
+        padding-left: 120px;
+      }
+
+      .footer .logo-footer img{
+        width: 65%;
+      }
+
+      .rede-social img{
+        width: 70% !important;
+        padding-top: 10px;
+      }
+
+        nav ul li a {
+          
+          font-size: 18px;
+          
+        }
+
+        nav {
+          display: flex;
+          height: 100px;
+        }
+
+        nav .logo img {
+          width: 45%;
+          padding-top: 5px;
+        }
+
+        .banner .titulo {
+            color: #fff;
+            text-align: left;
+            font-weight: 700;
+            max-width: 510px;
+            font-size: 58px;
+            text-transform: uppercase;
+        }
+    }
+
+    .email-link{
+        text-decoration: none;
+        color: #f5d83d;
+    }
+    
+    
+    .email-link:hover{
+        text-decoration: none;
+        color: #ffeb81;
+        transition: 0.7s;
+    }
+
+    .email-link-about{
+        text-decoration: none;
+        color: #ffeb81;
+    }
+    
+    
+    .email-link-about:hover{
+        text-decoration: none;
+        color: #f5d83d;
+        transition: 0.7s;
+    }
+
+
+    @media (max-width: 350px) {
+        nav .logo{
+          width: 180px;
+          padding-bottom: 10px;
+        }
+
+        nav {
+          padding: 0 20px 0 20px;
+        }
+
+
+        .descrição {
+          padding: 29px 27px !important;
+          height: 580px;
+        }
+        
+        .voltar {
+          position: absolute;
+          padding-left: 24px;
+          padding-top: 31px;
+          margin: 0;
+        }
+
+        .voltar img{
+            width: 17%;
+        }
+      }
+      
+      .menu-distant{
+        padding-right: 110px;
+    }
+
+    .ano-curriculo{
+      color: #fff;
+      text-align: right;
+      font-family: 'Roboto Condensed', sans-serif;
+      }
+
+      .texto-curriculo{
+        color: #fff;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .title-section{
+        color: #f5d83d;
+        padding: 20px 0 20px 20px;
+        font-size: 22px;
+        line-height: 60px;
+        font-weight: 700;
+      }
+
+  </style>
+</head>
+
+  <body>
+
+  <nav>
+          <div class="logo">
+            <a href="index.php">
+                RENATA MARQUES
+                <!-- <img src="img/logo-black.png" alt="RENATA DE CASTRO MARQUES"/> -->
+            </a>
+          </div>
+        <input type="checkbox" id="click">
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+
+          <ul>
+            <li><a href="index.php">INÍCIO</a></li>
+            <li><a href="projetos.php">PROJETOS</a></li>
+            <li><a href="codigos.php">CÓDIGOS</a></li>
+            <li class="menu-distant"><a class="active" href="codigos.php">SOBRE MIM</a></li>
+            <li><a href=meu-perfil.php>CONTATO</a></li>
+        
+          </ul>
+
+        </nav>
+      
+    <br />
+    <span class="title-section">FORMAÇÃO ACADÊMICA</span><br /><br />
+    <div class="col-sm-2 ano-curriculo">2013 - 2016</div>
+    <div class="col-sm-10 texto-curriculo">AAAA</div>
+
+    <div class="col-sm-2 ano-curriculo">2017 - 2020</div>
+    <div class="col-sm-10 texto-curriculo">AAAA</div>
+    
+    <br />
+    <span class="title-section">EXPERIÊNCIA PROFISSIONAL</span><br /><br />
+    <div class="col-sm-2 ano-curriculo">2013 - 2016</div>
+    <div class="col-sm-10 texto-curriculo">AAAA</div>
+
+    <div class="go-up">
+       
+        
+        <div class="go-up-img">
+        <a href="#topo">
+          <img src="img/up.png" alt="voltar para o topo" alt="para cima"/>
+        </a>
+        </div>
+
+    </div>
+ 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+  </html>
